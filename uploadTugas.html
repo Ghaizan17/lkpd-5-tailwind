@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Tugas</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-blue-200 p-6 overflow-hidden">
+  <button onclick="window.history.back()"  class="capitalize p-2 rounded-lg bg-blue-600 font-semibold text-white shadow-md hover:scale-105 hover:bg-blue-700 active:scale-95 transition-all">kembali</button>
+  <div class="min-h-screen flex justify-center items-center">
+    <div class="bg-white rounded-lg p-5 w-full max-w-md shadow-md">
+
+      <h1 class="font-bold uppercase text-4xl text-center mb-8">Upload Tugas</h1>
+
+      <form action="beranda.html" method="post" enctype="multipart/form-data" class="flex flex-col gap-5 h-[15rem]">
+        
+        <!-- Nama -->
+        <input required type="text" name="nama" id="nama" placeholder="Nama Lengkap"
+          class="p-2 rounded-lg border-2 border-gray-400 transition-all duration-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-400">
+
+        <!-- Upload File -->
+        <input required type="file" name="file" id="file"
+          class="p-2 rounded-lg border-2 border-gray-400 transition-all duration-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-400">
+
+        <!-- Tombol submit -->
+        <input type="submit" value="Kirim Tugas"
+          class="mt-16 w-full bg-blue-600 p-2 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95">
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
